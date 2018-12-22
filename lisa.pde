@@ -21,7 +21,7 @@ void draw() {
   pg.background(0);
   pg.fill(255);
   pg.noStroke();
-  float pgres = 450; //pg resolution (i could make it interactive using osc)
+  float pgres = 450; //pg resolution
   float pgstep = width/pgres; //cuts img depending on resolution
 
   for (float x = 0; x < lisa.width; x += pgstep) {
@@ -49,7 +49,7 @@ void draw() {
   s = sin(a)*2;
   for (int x = 0; x < width; x = x + w) { // loopong thought x axis with step of width/16
    segments[c] = pg.get(x0, 0, x1, height); //cuting img in 16 columns and storing the pieces
-   scale(s, -s);  //scaling every piece based on sin movement
+   scale(s, -s);  //scaling every piece based on sine movement
    image(segments[c], x, 0); //showing img
    x0 = x0 + w; //updateting x0 location
    x1 = x1 +w; //updateting x1 location
