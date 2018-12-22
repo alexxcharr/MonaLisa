@@ -22,7 +22,7 @@ void draw() {
   pg.fill(255);
   pg.noStroke();
   float pgres = 450; //pg resolution
-  float pgstep = width/pgres; //cuts img depending on resolution
+  float pgstep = width/pgres; //steps for loop
 
   for (float x = 0; x < lisa.width; x += pgstep) {
     for (float y = 0; y < lisa.height; y +=pgstep) {
