@@ -32,7 +32,7 @@ void draw() {
       color pixel = lisa.get(pixelX, pixelY);  //reads color of pixel
       float bri = brightness(pixel);  //calculates brightness of pixel
 
-      float size = map(bri, 0, 255, 2, 0); //map brightness so that the size of rectangle depents on it
+      float size = map(bri, 0, 255, 2, 0); //maps brightness so that the size of rectangle depents on it
       pg.pushMatrix();
       pg.translate(x, y); //transaleting on x and y to draw there the rectangle
       pg. rect(0, 0, size, size);
